@@ -7,8 +7,7 @@ import "./App.css";
 function App() {
   const audioFiles = [
     "/Music/Pag Ghunghroo Baandh - Namak Halaal.mp3",
-    "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3",
-    "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-3.mp3",
+    "/Music/Pyar Hamen Kis Mod Pe - Satte Pe Satta.mp3",
   ];
   const [isPlaying, setIsPlaying] = useState(false);
   const [currentIndex, setCurrentIndex] = useState(0);
