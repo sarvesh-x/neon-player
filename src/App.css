@@ -1,38 +1,108 @@
-.App {
-  text-align: center;
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+body
+{
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(45deg, #113727, #1dd1a1);
 }
 
-.App-link {
-  color: #61dafb;
+.player
+{
+  width: 300px;
+  background: hsl(61, 76%, 54%);
+  margin: 100px; 
+  padding: 20px 14px 8px 14px;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 10px 2px 90px -11px rgba(13,100,76,0.75);
+  -webkit-box-shadow: 10px 2px 90px -11px rgba(13,100,76,0.75);
+  -moz-box-shadow: 10px 2px 90px -11px rgba(13,100,76,0.75);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.imgBx img
+{
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 10px 2px 90px -11px rgba(13,100,76,0.75);
+}
+
+.player audio
+{
+  width: 100%;
+  border-radius: 6px;
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.song-details
+{
+  display: grid;
+  margin-top: 10px;
+}
+
+.player-controls
+{
+  display: grid;
+  column-gap: 50px;
+  grid-auto-flow: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  padding: 10px;
+}
+
+.player-controls2
+{
+  display: grid;
+  column-gap: 20px;
+  grid-auto-flow: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.control-button{
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+  color: #fff;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 8px;
+  background: #e5e7eb;
+  border-radius: 5px;
+  outline: none;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.progress-bar::-webkit-slider-thumb {
+  appearance: none;
+  width: 12px;
+  height: 12px;
+  background: #3b82f6;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.progress-bar::-moz-range-thumb {
+  width: 12px;
+  height: 12px;
+  background: #3b82f6;
+  border-radius: 50%;
+  cursor: pointer;
 }
