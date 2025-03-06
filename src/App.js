@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { useRef } from "react";
-import { parseBlob } from "music-metadata-browser";
 import { Play, Pause, SkipForward, SkipBack } from "lucide-react";
 import "./App.css";
 
